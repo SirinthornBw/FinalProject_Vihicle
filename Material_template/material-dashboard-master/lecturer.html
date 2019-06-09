@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>registration_lecturer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- แถบเมนู -->
+    <!-- logo ซ้ายสุด -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="row card">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.icons8.com/bubbles/2x/fiat-500.png" width="35%" height="35%"
+                    class="d-inline-block align-top" alt="">
+                <h5>PSU Phuket</h5><br>
+                <h6>Entrance sticker request form online</h6>
+            </a></div>
+        <!-- สถานะ ขวาสุด -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <form class="form-inline">
+                    <button class="btn btn-outline-success" type="button">สถานะ</button>
+
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">1.ข้อมูลบุคคล<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">2.ข้อมูลยานพาหนะ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">3.รายละเอียดการชำระเงิน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">4.รายละเอียดวันนัดรับสติ๊กเกอร์</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </nav><br>
+    <!-- ฟอร์มกรอกข้อมูล -->
+    <center>
+        <p>-- ข้อมูลการลงทะเบียนของท่าน --</p><br>
+        <h6>กรุณากรอกข้อมูลและตรวจสอบให้ถูกต้อง!</h6>
+
+        <div class="card col-md-8">
+
+            <div class="card-header">
+                ข้อมูลบุคคล
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </center>
+    <!--กล่องข้อความ-->
+    <div class="container p-3 mb-2 bg-light text-dark">
+            <!-- Top Word-->
+            <div class="col-md-12 mb-6 text-center p-3 mb-2 bg-dark text-white">
+                <u>
+                    <h5>แบบคำลงทะเบียน</h5>
+                </u>
+                <p>ขอใช้สิทธิออกเสียงลงคะแนน/ขอเปลี่ยนแปลงการออกใช้สิทธิออกเสียงลงคะแนนนอกราชอาณาจักร</p>
+                <p>และขอยกเลิกการลงทะเบียนการขอใช้สิทธิออกเสียงลงคะแนนนอกราชอาณาจักร</p>
+            </div>
+            <!-- Request Form -->
+            <form class="needs-validation" novalidate>
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>๑.ข้อมูลของผู้ขอลงทะเบียน</h5>
+                </div>
+                <div class="form-row">
+                    <!-- เลขบัตรประจำตัวประชาชน -->
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="InputIDCard">เลขบัตรประจำตัวประชาชน</label>
+                        <input type="text" required pattern="(\d{1})-(\d{4})-(\d{5})-(\d{2})-(\d{1})" class="form-control"
+                            id="InputIDCard" placeholder="x-xxxx-xxxx-xx-x">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your ID Card number.
+                        </div>
+                    </div>
+                    <!-- เลขหนังสือเดินทาง -->
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="InputIDCard">เลขหนังสือเดินทาง</label>
+                        <input type="text" required pattern="[A-Z]{2}\d{7}" class="form-control" id="InputIDCard"
+                            placeholder="Ex.AZxxxxxxx">
+                    </div>
+    
+                    <!-- ชื่อ-สกุล ไทย-->
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">ชื่อ</label>
+                        <input type="text" class="form-control" id="validationCustom01" required pattern="[ก-๙]"
+                            placeholder="Ex.สิรินธร" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your First name.(Thai)
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">นามสกุล</label>
+                        <input type="text" class="form-control" id="validationCustom02" required pattern="[ก-๙]"
+                            placeholder="Ex.บุญวัชระ" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your Last name.(Thai)
+                        </div>
+                    </div>
+                    <!-- ชื่อ-สกุล Eng-->
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required pattern="[A-Za-z]*"
+                            placeholder="Ex.Sirinthorn" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your First name.(English)
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" required pattern="[A-Za-z]*"
+                            placeholder="Ex.Boonwatchara" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your Last name.(English)
+                        </div>
+                    </div>
+                    <!-- Radio button | Gender -->
+                    <div class="form-group col-md-3 mb-3">
+                        <h6>เพศ</h6>
+                        <!-- Default checked -->
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="defaultCheck1" name="defaultExampleRadios"
+                                checked>
+                            <label class="custom-control-label" for="defaultCheck1">ผู้ชาย</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="defaultUncheck2"
+                                name="defaultExampleRadios">
+                            <label class="custom-control-label" for="defaultUncheck2">ผู้หญิง</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="inputM">วันที่เกิด</label>
+                            <input type="number" required min=1 max="31" class="form-control" id="inputM" placeholder="1">
+                            <div class="invalid-feedback">
+                                Incorrectt
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="inputM">เดือนที่เกิด</label>
+                            <select class="custom-select" name="month" required>
+                                <option value="1">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤษจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="inputM">ปีเกิด </label>
+                            <input type="number" required min=1900 max="2016" class="form-control" id="inputM"
+                                placeholder="1900">
+                            <div class="invalid-feedback">
+                                Incorrectt
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ส่วนที่ 2 -->
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>๒.ที่อยู่ในประเทศไทย(ตามทะเบียนบ้าน)</h5>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="text01">บ้านเลขที่</label>
+                        <input type="text" class="form-control" id="text01" placeholder="Ex.123/4" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid house number.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text02">ชื่อหมู่บ้านหรือชุมชน</label>
+                        <input type="text" class="form-control" id="text02" placeholder="Ex.รัษฎา/-" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid village.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text03">หมู่ที่</label>
+                        <input type="text" class="form-control" id="text03" placeholder="Ex.3" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Village No.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text04">ซอย</label>
+                        <input type="text" class="form-control" id="text04" placeholder="Ex.อริวดี1/-" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Alley.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text05">ถนน</label>
+                        <input type="text" class="form-control" id="text05" placeholder="Ex.เพชรเกษม" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Road.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text06">ตำบล/แขวง</label>
+                        <input type="text" class="form-control" id="text06" placeholder="Ex.เกาะแก้ว" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid District.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text07">อำเภอ/เขต</label>
+                        <input type="text" class="form-control" id="text07" placeholder="Ex.เมือง" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid District.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text01">จังหวัด</label>
+                        <input type="text" class="form-control" id="text01" placeholder="Ex.ภูเก็ต" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Province.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="text01">รหัสไปรษณีย์</label>
+                        <input type="text" class="form-control" id="text01" placeholder="Ex.83120" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Zip code.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-- ส่วนที่ 3-->
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>๓.ที่อยู่ปัจจุบันในต่างประเทศ</h5>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="exampleFormControlTextarea1">ที่อยู่</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a valid Address.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom04">ประเทศ</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="country" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Country.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <!-- E-mail -->
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustomUsername">E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="email" class="form-control" id="validationCustomUsername"
+                                placeholder="First.Last@example.com" aria-describedby="inputGroupPrepend" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your E-mail address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="InputTel">โทรศัพท์</label>
+                        <input type="text" required pattern="(\d{3})-(\d{7})" class="form-control" id="InputTel"
+                            placeholder="xxx-xxxxxxx">
+                    </div>
+                </div>
+                <!-- ส่วนที่ 4-->
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>๔.ในการเลือกตั้งครั้งนี้ข้าพเจ้ามีความประสงค์ ดังนี้</h5>
+                </div>
+                <div class="form-row">
+                    <!-- CheckBox | ความประสงค์ -->
+                    <div class="form-group col-md-12 mb-3">
+                        <div class="custom-control custom-checkbox md-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                            <label class="custom-control-label" for="customControlValidation1">ขอใช้สิทธิเลือกตั้ง</label>
+    
+                            <div class="invalid-feedback">invalid</div>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox md-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
+                            <label class="custom-control-label"
+                                for="customControlValidation2">ขอเปลี่ยนเเปลงสถานที่ใช้สิทธิออกเสียงลงคะเเนนนอกราชอาณาจักร</label>
+    
+                            <div class="invalid-feedback">invalid</div>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox md-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation3" required>
+                            <label class="custom-control-label"
+                                for="customControlValidation3">ขอเปลี่ยนเเปลงวิธีการออกเสียงลงคะเเนนเเละสถานที่การออกเสียงลงคะเเนน</label>
+    
+                            <div class="invalid-feedback">invalid</div>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox md-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation4" required>
+                            <label class="custom-control-label"
+                                for="customControlValidation4">ขอยกเลิกการลงทะเบียนการขอใช้สิทธิออกเสียงลงคะเเนนนอกราชอาณาจักร</label>
+    
+                            <div class="invalid-feedback">invalid </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ส่วนที่ 5 -->
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>๕.วิธีการออกเสียงลงคะแนนและสถานที่ออกเสียงลงคะแนน</h5>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12 mb-3">
+                        <!-- Default checked -->
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="Checked1" name="defaultExampleRadios"
+                                checked>
+                            <label class="custom-control-label" for="Checked1">การออกเสียงลงคะแนนที่หน่วยเลือกตั้ง ณ
+                                สถานเอกอัครราชทูต ณ กรุงโคเปนเฮเกน</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="Checked2" name="defaultExampleRadios">
+                            <label class="custom-control-label" for="Checked2">การใช้สิทธิออกเสียงทางไปรษณีย์</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            ข้าพเจ้าขอรับรองว่าข้อความที่ให้ไว้ข้างต้นเป็นความจริงทุกประการ
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit | Button-->
+                <div class="form-row mt-5">
+                    <div class="form-group col-md-6 mb-3 ">
+                        <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                    </div>
+                    <div class="form-group col-md-6 mb-3 d-flex justify-items-right">
+                        <button class="btn btn-warning btn-lg btn-primary" type="reset">!!Reset!!</button>
+                    </div>
+                </div>
+        </div>
+        </form>
+    
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
