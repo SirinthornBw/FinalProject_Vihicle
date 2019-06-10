@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>registration_lecturer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- แถบเมนู -->
+    <!-- logo ซ้ายสุด -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="row card">
+            <a class="navbar-brand " href="#">
+                <img src="https://img.icons8.com/bubbles/2x/fiat-500.png" width="35%" height="35%"
+                    class="d-inline-block align-left" alt="">
+                <h5 class="text-top">PSU Phuket</h5>
+                <h6>Entrance sticker request form online</h6>
+            </a></div>
+        <!-- สถานะ ขวาสุด -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <form class="form-inline">
+                    <button class="btn btn-outline-success" type="button">สถานะ</button>
+
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">1.ข้อมูลบุคคล<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">2.ข้อมูลยานพาหนะ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">3.รายละเอียดการชำระเงิน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">4.รายละเอียดวันนัดรับสติ๊กเกอร์</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </nav><br>
+    <!-- ฟอร์มกรอกข้อมูล -->
+    
+    <!--กล่องข้อความ-->
+    <div class="container p-3 mb-2 bg-light text-dark">
+            
+            <!-- Request Form -->
+            <form class="needs-validation" novalidate>
+                <div class="p-3 mb-2 bg-secondary text-white">
+                    <h5>1.ข้อมูลบุคคล</h5>
+                </div>
+                <div class="form-row">
+                    
+    
+                    <!-- ชื่อ-สกุล ไทย-->
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">ชื่อ</label>
+                        <input type="text" class="form-control" id="validationCustom01" required pattern="[ก-๙]"
+                            placeholder="Ex.สิรินธร" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your First name.(Thai)
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">นามสกุล</label>
+                        <input type="text" class="form-control" id="validationCustom02" required pattern="[ก-๙]"
+                            placeholder="Ex.บุญวัชระ" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter your Last name.(Thai)
+                        </div>
+                    </div>
+                    <!-- Radio button | Gender -->
+                    <div class="form-group col-md-3 mb-3">
+                        <h6>เพศ</h6>
+                        <!-- Default checked -->
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="defaultCheck1" name="defaultExampleRadios"
+                                checked>
+                            <label class="custom-control-label" for="defaultCheck1">ผู้ชาย</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="defaultUncheck2"
+                                name="defaultExampleRadios">
+                            <label class="custom-control-label" for="defaultUncheck2">ผู้หญิง</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="inputM">วันที่เกิด</label>
+                            <input type="number" required min=1 max="31" class="form-control" id="inputM" placeholder="1">
+                            <div class="invalid-feedback">
+                                Incorrectt
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="inputM">เดือนที่เกิด</label>
+                            <select class="custom-select" name="month" required>
+                                <option value="1">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤษจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="inputM">ปีเกิด </label>
+                            <input type="number" required min=1900 max="2016" class="form-control" id="inputM"
+                                placeholder="1900">
+                            <div class="invalid-feedback">
+                                Incorrectt
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ส่วนที่ 3-->
+                
+                <div class="form-row">
+                    
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom04">สังกัดคณะ/Faculty</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="faculty" required>
+                        <div class="invalid-feedback">
+                            Please select your faculty.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <!-- E-mail -->
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustomUsername">E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="email" class="form-control" id="validationCustomUsername"
+                                placeholder="First.Last@example.com" aria-describedby="inputGroupPrepend" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your E-mail address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4 mb-3">
+                        <label for="InputTel">โทรศัพท์</label>
+                        <input type="text" required pattern="(\d{3})-(\d{7})" class="form-control" id="InputTel"
+                            placeholder="xxx-xxxxxxx">
+                    </div>
+                </div>
+                
+                <!-- Submit | Button-->
+                <div class="row ">
+                    <a href="index.html">
+                    <div class="card-body bg-danger col-md-12 mb-3 align-left">
+                            ย้อนกลับ
+                    </div></a>
+                    <a href="studentI.html">
+                    <div class="card-body bg-success col-md-12 mb-3 align-right ">
+                                ถัดไป
+                    </div>
+                    </a>
+                    
+                </div>
+        </div>
+        </form>
+    
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
